@@ -36,13 +36,13 @@ def parse_args():
     
     # Параметры данных
     parser.add_argument("--data-dir", type=str, default="data", help="Папка с данными CIFAR-10")
-    parser.add_argument("--batch-size", type=int, default=32, help="Размер батча")
     
     # Параметры модели
     parser.add_argument("--embedding-dim", type=int, default=256, help="Размерность эмбеддинга")
     parser.add_argument("--learning-rate", type=float, default=0.001, help="Learning rate оптимизатора")
     
     # Параметры обучения
+    parser.add_argument("--batch-size", type=int, default=32, help="Размер батча")
     parser.add_argument("--epochs", type=int, default=20, help="Количество эпох обучения")
     parser.add_argument("--validation-split", type=float, default=0.1, help="Доля валидации")
     parser.add_argument("--verbose", type=int, default=1, choices=[0, 1, 2], help="Уровень логов")
